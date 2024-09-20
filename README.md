@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# React App
+
+Este proyecto es una aplicación frontend construida con React.
+
+## Requisitos
+
+Asegúrate de tener instalado lo siguiente antes de ejecutar el proyecto:
+
+- [Node.js](https://nodejs.org/) (versión 14 o superior)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/) como gestor de paquetes
+
+## Instalación
+
+1. Clona el repositorio en tu máquina local:
+   ```bash
+   git clone https://github.com/Revocod3/personal-finance-app.git
+
+2. Accede al directorio del proyecto:
+   cd nombre_proyecto o cd tab
+
+3. Instala las dependencias del proyecto:
+   npm install o yarn install
+
+4. Ejecuta el servidor de desarrollo:
+   npm start o yarn start
+
+
