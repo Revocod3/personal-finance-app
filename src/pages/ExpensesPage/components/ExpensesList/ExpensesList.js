@@ -114,7 +114,7 @@ const ExpensesList = (props) => {
               <Table.Tr>
                 <Table.Td colSpan={5}>
                   <Text fw={500} ta="center">
-                    Nothing found
+                    No hay datos
                   </Text>
                 </Table.Td>
               </Table.Tr>

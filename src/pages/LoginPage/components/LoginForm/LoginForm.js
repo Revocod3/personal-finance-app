@@ -23,7 +23,8 @@ const LoginForm = () => {
       terms: type === "register" ? true : undefined,
     },
     validate: {
-      email: (val) => (/^\S+@\S+$/.test(val) ? null : "Invalid email"),
+      email: (val) =>
+        type === "register" && (/^\S+@\S+$/.test(val) ? null : "Invalid email"),
       password: (val) =>
         val.length <= 6
           ? "Password should include at least 6 characters"
@@ -31,7 +32,6 @@ const LoginForm = () => {
     },
   });
 
-  console.log(form.getValues());
   const { localLogin } = useAuth();
   const navigate = useNavigate();
 
@@ -40,7 +40,6 @@ const LoginForm = () => {
     onSuccess: (data) => {
       localLogin(data.token);
       navigate("/dashboard/reports");
-      console.log(data);
     },
   });
 
@@ -48,8 +47,7 @@ const LoginForm = () => {
     mutationFn: register,
     onSuccess: (data) => {
       localLogin(data.token);
-      navigate("/dashboard");
-      console.log(data);
+      navigate("/dashboard/reports");
     },
   });
 

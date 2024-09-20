@@ -1,6 +1,5 @@
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 const Donut = (data) => {
-  console.log(data.data);
   const chartData = Array.isArray(data.data) ? data.data : [];
 
   return (
